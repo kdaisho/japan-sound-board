@@ -1,24 +1,40 @@
 @import "partials/reset";
+@primaryColor: #4bcff9;
+@accentColor: #ffc600;
 
 body * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: #666;
-    height: 100vw;
+    background: #222;
 }
 
 .container {
-    margin: 3em auto;
+    margin: 5em auto;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
 }
 
 .app-title {
+    color: @primaryColor;
     text-align: center;
     font-size: 3em;
+}
+
+.help {
+    color: @primaryColor;
+    font-size: 2em;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.footer {
+    background: @primaryColor;
+    padding: 2em 1em;
+    text-align: center;
+    height: 3vw;
 }
 
 .keys {
@@ -28,9 +44,9 @@ body {
     justify-content: center;
 
     .key {
-        border: 3px solid black;
+        border: 3px solid @primaryColor;
         background: rgba(0, 0, 0, .4);
-        color: #fff;
+        color: @primaryColor;
         font-size: 1.5em;
         text-align: center;
         transition: all .07s;
@@ -44,9 +60,8 @@ body {
 
         &.playing {
             transform: scale(1.2);
-            border-color: #ffc600;
-            box-shadow: 0 0 10px #ffc600;
+            border-color: @accentColor;
+            box-shadow: 0 0 10px @accentColor;
         }
     }
-
 }
