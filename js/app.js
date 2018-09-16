@@ -5,7 +5,6 @@ function playSound(event) {
     const key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
     stopSound(event);
     if (!audio) return;
-    console.log(key);
     audio.currentTime = 0;
     audio.play();
     key.classList.add('playing');
@@ -20,7 +19,6 @@ function stopSound(event) {
 
 function removeTransition(event) {
     if (event.propertyName !== 'transform') return;
-    console.log(event);
     this.classList.remove('playing');
 }
 
