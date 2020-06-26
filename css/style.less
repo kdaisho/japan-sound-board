@@ -7,7 +7,11 @@ body * {
 }
 
 body {
-    background: #222;
+	background: #222;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	height: 100vh;
 }
 
 .container {
@@ -31,10 +35,14 @@ body {
 }
 
 .footer {
-    background: @primaryColor;
+	align-items: center;
+	background: @primaryColor;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	min-height: 80px;
     padding: 2em 1em;
     text-align: center;
-    height: 3vw;
 }
 
 .keys {

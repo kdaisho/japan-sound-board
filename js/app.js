@@ -29,3 +29,6 @@ const audios = document.querySelectorAll('audio');
 audios.forEach(audio => audio.volume = .25);
 
 window.addEventListener('keydown', playSound);
+
+const currentYear = new Date().getFullYear();
+document.getElementById("year").innerHTML = currentYear;
