@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Japn Sound Kit</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <section class="container">
-        <h1 class="app-title">Japan Sound Kit</h1>
-        <div class="keys">
-            <div data-key="65" class="key">A</div>
-            <div data-key="83" class="key">S</div>
-            <div data-key="68" class="key">D</div>
-            <div data-key="70" class="key">F</div>
-            <div data-key="71" class="key">G</div>
-            <div data-key="72" class="key">H</div>
-            <div data-key="74" class="key">J</div>
-            <div data-key="75" class="key">K</div>
-            <div data-key="76" class="key">L</div>
-        </div>
+      <h1 class="app-title">Japan Sound Kit</h1>
+      <div class="keys">
+        <div data-key="65" class="key">A</div>
+        <div data-key="83" class="key">S</div>
+        <div data-key="68" class="key">D</div>
+        <div data-key="70" class="key">F</div>
+        <div data-key="71" class="key">G</div>
+        <div data-key="72" class="key">H</div>
+        <div data-key="74" class="key">J</div>
+        <div data-key="75" class="key">K</div>
+        <div data-key="76" class="key">L</div>
+      </div>
 
-        <p class="help">Press Space to Stop</p>
+      <p class="help" id="stop">Press Space to Stop</p>
     </section>
 
     <section class="footer">
-        <p>&#169; Copyright <span id="year"></span> daishodesign.com. All Rights Reserved.</p>
+      <p>
+        &#169; Copyright <span id="year"></span> daishodesign.com. All Rights
+        Reserved.
+      </p>
     </section>
 
     <audio src="sounds/baka.mp3" data-key="65"></audio>
@@ -42,6 +44,5 @@
     <audio src="sounds/hahaha.mp3" data-key="76"></audio>
 
     <script src="js/app.js"></script>
-</body>
-
+  </body>
 </html>
